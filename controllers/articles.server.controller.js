@@ -72,3 +72,18 @@ exports.articleByID = function(req, res, next, id) {
 		next();
 	});
 };
+//jhj
+module.exports.new = function(req, res){
+  res.render('./../public/lib/article/chat.js', {
+          user: req.user || null,
+          request: req
+        });
+//
+module.exports.new = function(req, res){
+  res.render('./../public/lib/article/background.jpg', {
+          user: req.user || null,
+          request: req
+        });
+};
+
+};
